@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Pascal's Triangle"""
 from math import factorial
+"""doc doc"""
 
 
 def pascal_triangle(n):
