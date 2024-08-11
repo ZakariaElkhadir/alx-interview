@@ -1,16 +1,21 @@
 #!/usr/bin/python3
 """Pascal's Triangle"""
-from math import factorial
-"""doc doc"""
 
 
 def pascal_triangle(n):
-    """doc doc"""
+    """Returns a list of lists representing Pascal's Triangle of n."""
     if n <= 0:
         return []
-    if isinstance(n, int):
-        for i in range(n):
-            for r in range(i + 1):
-                ncr = factorial(i) // (factorial(r) * factorial(i - r))
-                print(ncr, end=" ")
-            print("")
+
+    triangle = []
+    for i in range(n):
+        row = []
+        for r in range(i + 1):
+            # Calculate the value of nCr (binomial coefficient)
+            if r == 0 or r == i:
+                row.append(1)
+            else:
+                row.append(triangle[i-1][r-1] + triangle[i-1][r])
+        triangle.append(row)
+
+    return triangle
