@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-from math import factorial
-
 """Pascal's Triangle"""
+from math import factorial
 
 
 def pascal_triangle(n):
+    """doc doc"""
     if n <= 0:
         return []
     if isinstance(n, int):
