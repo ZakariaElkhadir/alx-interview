@@ -13,4 +13,3 @@ try:
 except ValueError:
     print("N must be a number")
     sys.exit(1)
-
