@@ -17,3 +17,4 @@ By studying these concepts and utilizing the resources provided, you will be equ
 
 ## Requirements
 - Write a program that solves the N queens problem.
+.
